@@ -1,0 +1,23 @@
+#div0 {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    left: 0px;
+}
+
+#div1 {
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 550px;
+}
+
+span {
+    position: fixed;
+    height: 35px;
+    width: 230px;
+    font-size: 30px;
+    background-color: rgb(0, 80, 0);
+}
