@@ -65,7 +65,7 @@ function handleLoad(): void{
 
 function createFormData(): void {
     form = new FormData(document.forms[0]);
-    console.log(form); // Das FormData-Objekt ist leer, daher muss ich die Werte händisch anhängen
+    console.log(form); // Das FormData-Objekt ist bei mir immer leer, daher muss ich die Werte händisch anhängen
     form.append("pairs",anzahlPairInput.value);
     form.append("size", slider.value);
     form.append("backCol", backgColorPicker.value);
