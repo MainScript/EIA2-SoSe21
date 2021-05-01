@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+}
+
+label {
+    font-weight: bold;
+    font-size: large;
+}
+
+#sliderSpan {
+    color: red;
+}
+
+#comicOption {
+    font-family: "Comic Sans MS";
+}
+
+#sansOption {
+    font-family: sans-serif;
+}
+
+#fantasyOption {
+    font-family: fantasy;
+}
+
+#spielfeld, #congratz, #scoreP {
+    display: none;
+}
+
+#spielfeld {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+}
+
+.karte {
+    border: 1px solid white;
+}
+
+#scoreP {
+    font-weight: bold;
+}

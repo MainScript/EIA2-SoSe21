@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Memory</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
+</head>
+<body>
+    <h1>MEMORY</h1>
+    <div id="optionDIV">
+        <form id="settingsForm" name="settingsForm">
+            <label for="pairInput">Wähle die Anzahl der Kartenpaare aus: </label>
+            <input type="number" id="pairInput" name="pairInput" autocomplete="off" min=5 max=25 value=5><br><br>
+            
+            <label for="kartenSize">Wähle die Kartengröße aus: <span id="sliderSpan">3</span> </label>
+            <input type="range" id="kartenSize" name="kartenSize" autocomplete="off" min=1 max=5 value=3><br><br>
+            
+            <label for="backgColor">Wähle die Farbe des Hintergrunds aus:</label>
+            <input type="color" id="backgColor" name="backgColor" value="#212121"><br><br>
+            <label for="kartenColor">Wähle die Farbe der Kartenrücken aus:</label>
+            <input type="color" id="kartenColor" name="kartenColor" value="#6C0000"><br><br>
+            <label for="textColor">Wähle die Farbe des Kartentexts aus:</label>
+            <input type="color" id="textColor" name="textColor" value="#FFFFFF"><br><br>
+    
+            <label for="kartenFont">Wähle das Font für den Kartentext aus: </label>
+            <select id="kartenFont" name="kartenFont">
+                <option value="Comic Sans MS" id="comicOption">Comic Sans MS</option>
+                <option value="sans-serif" id="sansOption">Sans-Serif</option>
+                <option value="fantasy" id="fantasyOption">Fantasy</option>
+            </select><br><br>
+            <input type="button" value="START" id="submitB">
+        </form>
+    </div>
+    <p id="scoreP">Aktueller Punktestand: <span id="scoreSpan">0</span></p>
+    <div id="spielfeld"></div>
+    <div id="congratz">
+        <h2>HERZLICHEN GLÜCKWUNSCH!</h2>
+        <p>Du hast das Memory in <span id="timerSpan"></span> Sekunden geschafft!</p>
+    </div>
+</body>
+</html>
